@@ -25,15 +25,13 @@ class Kendaraan {
             return "DAPAT SUBSIDI";
         }
         else {
-        return "TIDAK DAPAT SUBSIDI";
+            return "TIDAK DAPAT SUBSIDI";
         }
-        
-      
     }
-    
 }
-    //instansiasi kelas
-    $ObjekKendaraan = new Kendaraan();//pembuatan objek dari kelas
- echo "jumlahRoda : ".$ObjekKendaraan->$jumlahRoda."<br />"; //proses instansiasi pemanggilan variable
- echo "Status Harga : ".$ObjekKendaraan->$statusHarga();//proses instansiasi//pemanggilan function dari kelas
- echo "Status Subsidi :".$ObjekKendaraan1->statusSubsidi();
+//instansiasi kelas
+$ObjekKendaraan = new Kendaraan();//pembuatan objek dari kelas
+echo "jumlahRoda : ".$ObjekKendaraan->jumlahRoda."<br />"; //proses instansiasi pemanggilan variable
+echo "status Harga : ".$ObjekKendaraan->statusHarga()."<br />";//proses instansiasi//pemanggilan function dari kelas
+echo "status Subsidi :".$ObjekKendaraan->statusSubsidi();
+?>
