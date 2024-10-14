@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>PROGRAM KASIR TOKO-BUTIK CANTIK</title>
+</head>
+
+<body>
+    <div style="color: #ffffff; margin:0; background: rgb(255, 197, 197); padding: 53px 10px;
+    float: left; width: 25%; font-size: 1.5em; text-align: center;"><img src="images\butik.png" height="100px"></img>
+    </div>
+    <div style="color: #f5309c; margin:0; background: rgb(255, 197, 197); padding: 30px 10px;
+    float: left; width: 66%; font-size: 1.5em; text-align: center;">
+        <h2>
+            <h1>KASIR TOKO</h1>
+        </h2>Butik Cantik
+    </div>
+    <div style="color: #a70045; margin:0; background: rgb(255, 255, 255); padding: 20px;
+    float: left; width: 20%;font-size: 1.5em; text-align: center;">Login</div>
+    <form action="proses.php" method="get"></form>
+    <table border="0">
+        <tr>
+            <td>LOGIN KASIR</td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td><input type="text" name="Username"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="Password" name="Password"></td>
+        </tr>
+        <tr>
+            <td>Level</td>
+            <td><select name="Level">
+                    <option value="Admin">Admin</option>
+                    <option value="Karyawan">Karyawan</option>
+                    <option value="Pemilik">Pemilik</option>
+
+                </select></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="simpan" value="LOGIN"></td>
+        </tr>
+    </table>
+    </form>
+
+
+
+</body>
+
+</html>
