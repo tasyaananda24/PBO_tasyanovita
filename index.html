@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Beranda</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/JavaScript">
+        function Buku_Tamu() {
+            var Nama;
+            Nama = prompt("Isi Nama Anda", "");
+            var Email;
+            Email = prompt("Isi Email Anda", "");
+            var Pesan;
+            Pesan = prompt("Isi Pesan Anda", "");
+
+            var table = document.getElementById("BukuTamu").getElementsByTagName('tbody')[0];
+            var newRow = table.insertRow();
+
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+
+            cell1.textContent = Nama;
+            cell2.textContent = Email;
+            cell3.textContent = Pesan;
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1 style="color:blue; font-size: 24px;">
+        Selamat Datang di Halaman Beranda</h1>
+
+    <a href="about.html">Ke Halaman Tentang Kami</a>
+    <br><br>
+    <button id="Buka Buku Tamu" onclick="Buku_Tamu()">Buku Tamu</button>
+    <br><br>
+    <table id="BukuTamu" border='1'>
+        <tr>
+            <td>Nama</td>
+            <td>Email</td>
+            <td>Pesan</td>
+        </tr>
+    </table>
+</body>
+
+</html>
